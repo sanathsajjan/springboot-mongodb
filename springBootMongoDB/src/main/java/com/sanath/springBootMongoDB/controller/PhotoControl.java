@@ -21,6 +21,7 @@ public class PhotoControl {
     private PhotoService photoService;
 
     //Use postman -> body -> formdata -> select file -> upload the image.
+    
     // The key should be your requestParam name
     @PostMapping
     public String addPhoto(@RequestParam("image")MultipartFile image) throws IOException {
